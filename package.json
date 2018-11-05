@@ -1,0 +1,20 @@
+{
+  "name": "cositede",
+  "version": "0.0.1",
+  "description": "D. some",
+  "main": "/src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "site"
+  ],
+  "author": "D.",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "npm": "^6.4.1"
+  }
+}
