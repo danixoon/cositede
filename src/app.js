@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+var port = process.env.PORT || 8080;
+
 
 app.set("view engine", "ejs");
 app.use("/public", express.static("./public"));
@@ -28,6 +30,6 @@ app.get("/:id/:he", (req, res)=>{
   res.send("FUCK U");
 });
 
-app.listen(80, function() {
-  console.log("Cositede listening on 80 port");
+app.listen(port, function() {
+  console.log(`Cositede listening on ${port} port`);
 });
