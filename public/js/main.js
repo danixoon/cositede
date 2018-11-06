@@ -13,12 +13,12 @@ $(document).ready(function() {
 
   // When the user scrolls the page, execute myFunction
 
-  $(window).scroll(function() {
-    let menu = $(".menu-container");
-    let aTop = menu.height();
-    if ($(this).scrollTop() >= aTop) {
-      console.log("header just passed.");
-      menu.css("postion", "sticky");
-    }
-  });
+  // $(window).scroll(function() {
+  //   let menu = $(".menu-container");
+  //   let aTop = menu.height();
+  //   if ($(this).scrollTop() >= aTop) {
+  //     console.log("header just passed.");
+  //     menu.css("postion", "sticky");
+  //   }
+  // });
 });

@@ -28,6 +28,6 @@ app.get("/:id/:he", (req, res)=>{
   res.send("FUCK U");
 });
 
-app.listen(3000, function() {
-  console.log("Example app listening on port 3000!");
+app.listen(80, function() {
+  console.log("Cositede listening on 80 port");
 });
