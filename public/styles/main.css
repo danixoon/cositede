@@ -1,9 +1,130 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto&subset=latin, cyrillic);
+/* @import url("http://fonts.googleapis.com/css?family=Roboto&subset=latin, cyrillic"); */
+@import url("https://fonts.googleapis.com/css?family=Rubik");
 body {
-  font-family: Roboto, "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
-    Geneva, Verdana, sans-serif;
+  font-family: Rubik, sans-serif;
+  margin: 0px;
 }
 
+@media (max-width: 1060px) {
+  .tagline {
+    display: none;
+  }
+  .logo {
+    margin: auto;
+  }
+
+  #page .menu-bar {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.header {
+  display: flex;
+  /* height: 150px; */
+  padding: 2em;
+  align-items: center;
+}
+
+.header .tagline {
+  font-size: 50.58pt;
+  color: #08caa9;
+  margin: auto;
+  overflow-x: visible;
+  padding: 0px 1em 0px 1em;
+  /* flex-basis:  */
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+#page .menu-bar {
+  display: flex;
+  background-color: #404040;
+  color: #b3b3b3;
+
+  /* height: 80px; */
+  width: 100%;
+
+  list-style: none;
+
+  margin: auto;
+  padding: 0px;
+
+  font-size: 24pt;
+  font-weight: bold;
+
+  overflow: auto;
+}
+
+#page .menu-bar li {
+  padding: 10px 40px 10px 40px;
+  border-bottom: 0.34em transparent solid;
+  transition: color 0.4s, border 0.2s;
+  cursor: pointer;
+}
+
+.bar-hovered {
+  padding: 10px 40px 10px 40px;
+  color: white;
+  border-bottom: 0.34em #08caa9 solid !important;
+  /* transition: color 0.4s, border 0.2s; */
+  cursor: pointer;
+}
+
+#page .menu-bar li:hover {
+  color: white;
+  border-bottom: 0.34em #08caa9 solid;
+}
+
+.aboutus {
+  background-color: #404040;
+  height: 30em;
+  margin: 0px;
+  padding-bottom: 1em;
+  overflow-y: auto;
+}
+
+.aboutus li {
+  color: white;
+  padding-bottom: 0.2em;
+  font-weight: normal;
+  font-size: 40pt;
+  margin-left: 2em;
+  padding-right: 1em;
+}
+
+h1 {
+  /* padding: 0.2em 0em 0.2em 0em; */
+  color: #08caa9;
+  font-weight: normal;
+  font-size: 50pt;
+}
+
+.big-button {
+  margin: 2em auto 2em auto;
+  background-color: #08caa9;
+  border: none;
+  border-radius: 1em;
+  font-size: 30pt;
+  color: white;
+  width: 13em;
+  height: 4em;
+  box-shadow: 0px 8px 0 #06987f;
+}
+
+.big-button:active {
+  box-shadow: none;
+  margin-top: calc(2em + 8px);
+}
+
+*:focus {
+  outline: none !important;
+}
+
+/* 
 @media screen and (max-width: 868px) {
   .main-page {
     display: flex;
@@ -14,16 +135,10 @@ body {
   }
 }
 
-body {
-  margin: 0px;
-}
-
 .page {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: 0px; */
-  /* padding: 0px; */
 }
 
 .bottom {
@@ -34,23 +149,32 @@ body {
 
 .menu-container {
   display: flex;
-  background-color: #08caa9;
+  background-color: #615d5e;
   height: 60px;
   flex: 1;
   align-self: stretch;
   margin-bottom: 30px;
+  margin-top: 0px;
   position: sticky;
   top: 0px;
   z-index: 1;
 }
 
 .menu-item {
-  color: white;
+  width: 100%;
+  flex-grow: inherit;
+  list-style-type: none;
+  color: #dddddd;
   text-align: center;
   margin: auto;
   font-size: 1.4em;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.menu-item:hover {
+  color: white;
 }
 
 .side {
@@ -99,8 +223,6 @@ hr {
   margin-bottom: auto;
   margin-left: 1em;
   justify-content: flex-start;
-  /* text-align: left; */
-  /* margin-left: 0; */
 }
 
 .header {
@@ -128,4 +250,5 @@ hr {
   align-content: center;
   justify-content: space-around;
   margin-top: 30px;
-}
+} 
+*/

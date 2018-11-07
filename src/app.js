@@ -22,7 +22,11 @@ app.get("/user/:id", function(req, res, next) {
 });
 
 app.get("/", function(req, res) {
+  // console.log(res);
   res.render("index");
+});
+app.get("/shop/", function(req, res) {
+  res.render("shop");
 });
 
 app.get("/:id/:he", (req, res)=>{
